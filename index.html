@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AIA 抽獎系統</title>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+	<!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<section class="section-nav">
+		<nav class="navbar navbar-dark">
+			<a class="navbar-brand" href="#"><img class="logo" src="/image/logo.jpeg" alt="" srcset="" width="250px"></a>
+			<div class="justify-content-end align-items-end" id="navbarSupportedContent">
+				<!-- <ul class="navbar-nav">
+					<li class="nav-item px-3">
+						<a class="nav-link" href="javascritpt: return false;" onclick="logout()">登出</a>
+					</li>
+				</ul> -->
+			</div>
+		</nav>
+	</section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="page-header text-center">
+					<h1>AIA 抽獎系統</h1>
+					<h5>公平｜公正｜公開</h5>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row topbox">
+			<div class="col-md-6 col-md-offset-3 rollbox">
+				<div class="line"></div>
+				<table>
+					<tr id="loadout">
+
+					</tr>
+				</table>
+			</div>
+			<br>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<button id="roll" class="btn btn-success form-control">Roll</button>
+				<div id="msgbox" class="alert alert-warning" style="margin-top:20px;display:none;">You need to add
+					at least 2 lines!</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-12" style="text-align:center">
+				<div id="log"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<p>Insert the list of Users:</p>
+				<textarea class="form-control inputbox" rows="10">
+EM101001
+EM101002
+EM101004
+EM101005
+EM101010
+EM101011
+Em101012
+EM101014
+EM101018
+EM101021
+EM101022
+EM101026
+EM101028
+EM101033
+EM101034
+EM101049
+EM101001
+EM101002
+EM101003
+EM101005
+EM101010
+EM101011
+EM101013
+EM101014
+EM101018
+Em101021
+EM101022
+EM101026
+EM101027
+EM101028
+EM101032
+EM101033
+EM101034
+EM101039
+EM101040
+EM101043
+Em101046
+EM101001
+EM101002
+EM101003
+EM101004
+EM101005
+EM101008
+EM101010
+EM101011
+Em101013
+EM101014
+EM101015
+EM101018
+Em101021
+EM101022
+EM101026
+Em101030
+EM101032
+EM101033
+EM101034
+EM101039
+EM101040
+EM101041
+em101001
+EM101003
+EM101005
+EM101010
+EM101011
+EM101013
+EM101014
+EM101018
+EM101020
+Em101021
+EM101022
+EM101026
+EM101027
+EM101028
+Em101030
+EM101032
+EM101034
+EM101039
+EM101040
+EM101041
+EM101043
+EM101039
+EM101026
+EM101040
+EM101005
+EM101034
+Em101013
+EM101014
+EM101046
+EM101011
+EM101037
+EM101038
+EM101027
+em101001
+EM101015
+EM101003
+EM101028
+EM101022
+EM101008
+EM101018
+EM101032</textarea>
+			</div>
+		</div>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	<script src="js/index.js"></script>
+
+
+</body>
+
+</html>
