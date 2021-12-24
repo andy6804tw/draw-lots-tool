@@ -115,7 +115,7 @@ html{
 	margin-right:10px;
 	box-shadow:0 0 5px 0 black;
 	background: purple;
-	background-image:url('/image/badge1.png');
+	background-image:url('./image/badge1.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -127,7 +127,7 @@ tr,table,td{
 
 td:nth-child(even) .roller{
 	background: blue;
-	background-image:url('/image/badge2.png');
+	background-image:url('./image/badge2.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

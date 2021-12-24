@@ -6,7 +6,7 @@ $(document).ready(function(){
 	duration_time = 10000;
 	$("#roll").click(function(){
 		// play audio
-		var audioRoll = new Audio('/audio/test.mp3');
+		var audioRoll = new Audio('./audio/test.mp3');
 		audioRoll.play();
 		users = [];
 		var lines = $('textarea').val().split('\n');
@@ -64,7 +64,7 @@ $(document).ready(function(){
 			if(count!=1)
 				document.getElementById('log').innerHTML=`請再試一次！`
 			audioRoll.pause();
-			var audioVictory = new Audio(`/audio/victory${Math.floor(Math.random()*4)+1}.mp3`);
+			var audioVictory = new Audio(`./audio/victory${Math.floor(Math.random()*4)+1}.mp3`);
 			audioVictory.play();
 		});
 	});
