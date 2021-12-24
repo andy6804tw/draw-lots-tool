@@ -3,6 +3,6 @@
 # 線上抽獎系統
 使用方法：將抽獎名單貼至下方欄位中(每個抽獎人以換行隔開)
 
-![]('./screenshot/demo.png')
+![](./screenshot/demo.png)
 
-![]('./screenshot/demo.gif')
+![](./screenshot/demo.gif)
