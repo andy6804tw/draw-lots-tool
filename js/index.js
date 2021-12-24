@@ -63,9 +63,12 @@ $(document).ready(function(){
 			});
 			if(count!=1)
 				document.getElementById('log').innerHTML=`請再試一次！`
-			audioRoll.pause();
-			var audioVictory = new Audio(`./audio/victory${Math.floor(Math.random()*4)+1}.mp3`);
-			audioVictory.play();
+			else{
+				// 抽到得獎者，下放音樂
+				audioRoll.pause();
+				var audioVictory = new Audio(`./audio/victory${Math.floor(Math.random()*4)+1}.mp3`);
+				audioVictory.play();
+			}
 		});
 	});
 	Array.prototype.shuffle = function(){
