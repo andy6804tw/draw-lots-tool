@@ -5,6 +5,9 @@ $(document).ready(function(){
 	insert_times = 30,
 	duration_time = 10000;
 	$("#roll").click(function(){
+		// play audio
+		var audioRoll = new Audio('/audio/test.mp3');
+		audioRoll.play();
 		users = [];
 		var lines = $('textarea').val().split('\n');
 		if(lines.length < 2){
@@ -27,10 +30,10 @@ $(document).ready(function(){
 		loadout.css("left","100%");
 		if(users.length < 10){
 			insert_times = 20;
-			duration_time = 5000;
+			duration_time = 7000;
 		}else{
 			insert_times = 10;
-			duration_time = 5000;
+			duration_time = 7000;
 		}
 		for(var times = 0; times < insert_times;times++){
 			shuffled = users;
@@ -60,6 +63,9 @@ $(document).ready(function(){
 			});
 			if(count!=1)
 				document.getElementById('log').innerHTML=`請再試一次！`
+			audioRoll.pause();
+			var audioVictory = new Audio(`/audio/victory${Math.floor(Math.random()*4)+1}.mp3`);
+			audioVictory.play();
 		});
 	});
 	Array.prototype.shuffle = function(){
