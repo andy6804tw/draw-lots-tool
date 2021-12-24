@@ -57,7 +57,7 @@ $(document).ready(function(){
 					var center = window.innerWidth / 2;
 					if($(this).offset().left < center && $(this).offset().left + 185 > center){
 						var text = $(this).children().text();
-						console.log(`${$(this).offset().left} ${$(this).offset().left+185} ${center} ${text}`)
+						console.log(`恭喜得獎者: ${text}`)
 						$("#log").append("恭喜得獎者 🎊<br/> <span class=\"badge\">"+text+"</span>");
 						count++
 					}
